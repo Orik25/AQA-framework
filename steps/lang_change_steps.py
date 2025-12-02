@@ -6,7 +6,7 @@ from pages.search_results_page import SearchResultsPage
 @when(r"I change language to '(.*)'")
 def sort(ctx, lang_code):
     results = ctx.pages["results"]
-    results.change_language()
+    results.change_language(lang_code)
     ctx.pages["results"] = SearchResultsPage(ctx.driver)
 
 @then("language should be '(.*)'")

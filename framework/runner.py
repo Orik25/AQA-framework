@@ -7,6 +7,9 @@ import steps.sorting_steps
 import steps.search_steps
 import steps.common_steps
 import steps.lang_change_steps
+import steps.cart_steps
+import steps.category_steps
+import steps.home_steps
 
 class BDDRunner:
     def run_feature(self, fname):

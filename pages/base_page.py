@@ -27,6 +27,7 @@ class BasePage(BaseCase):
         )
 
     def click(self, value, by=By.CSS_SELECTOR, timeout=60):
+        time.sleep(2)
         element = WebDriverWait(self.driver, timeout).until(
             EC.element_to_be_clickable((by, value))
         )

@@ -1,4 +1,4 @@
-Feature: Search4
+Feature: SortAsc1
  Given I open the Rozetka home page
  When I search for 'Iphone 16'
  When I sort products by price 'asc'
